@@ -36,15 +36,15 @@
             this.GroupBox_Size = new System.Windows.Forms.GroupBox();
             this.Label_Width = new System.Windows.Forms.Label();
             this.Label_Height = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.NumBox_Width = new System.Windows.Forms.NumericUpDown();
+            this.NumBox_Height = new System.Windows.Forms.NumericUpDown();
             this.Button_Save = new System.Windows.Forms.Button();
             this.TextBox_Save = new System.Windows.Forms.TextBox();
             this.Button_Extract = new System.Windows.Forms.Button();
             this.GroupBox_Direction.SuspendLayout();
             this.GroupBox_Size.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumBox_Width)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumBox_Height)).BeginInit();
             this.SuspendLayout();
             // 
             // Button_Open
@@ -56,6 +56,7 @@
             this.Button_Open.TabIndex = 0;
             this.Button_Open.Text = "Open";
             this.Button_Open.UseVisualStyleBackColor = true;
+            this.Button_Open.Click += new System.EventHandler(this.Button_Open_Click);
             // 
             // TextBox_Open
             // 
@@ -99,8 +100,8 @@
             // 
             // GroupBox_Size
             // 
-            this.GroupBox_Size.Controls.Add(this.numericUpDown2);
-            this.GroupBox_Size.Controls.Add(this.numericUpDown1);
+            this.GroupBox_Size.Controls.Add(this.NumBox_Height);
+            this.GroupBox_Size.Controls.Add(this.NumBox_Width);
             this.GroupBox_Size.Controls.Add(this.Label_Height);
             this.GroupBox_Size.Controls.Add(this.Label_Width);
             this.GroupBox_Size.Location = new System.Drawing.Point(12, 169);
@@ -128,19 +129,29 @@
             this.Label_Height.TabIndex = 1;
             this.Label_Height.Text = "Height (px):";
             // 
-            // numericUpDown1
+            // NumBox_Width
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(95, 21);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(120, 27);
-            this.numericUpDown1.TabIndex = 2;
+            this.NumBox_Width.Location = new System.Drawing.Point(95, 21);
+            this.NumBox_Width.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.NumBox_Width.Name = "NumBox_Width";
+            this.NumBox_Width.Size = new System.Drawing.Size(120, 27);
+            this.NumBox_Width.TabIndex = 2;
             // 
-            // numericUpDown2
+            // NumBox_Height
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(95, 54);
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(120, 27);
-            this.numericUpDown2.TabIndex = 3;
+            this.NumBox_Height.Location = new System.Drawing.Point(95, 54);
+            this.NumBox_Height.Maximum = new decimal(new int[] {
+            100000,
+            0,
+            0,
+            0});
+            this.NumBox_Height.Name = "NumBox_Height";
+            this.NumBox_Height.Size = new System.Drawing.Size(120, 27);
+            this.NumBox_Height.TabIndex = 3;
             // 
             // Button_Save
             // 
@@ -151,6 +162,7 @@
             this.Button_Save.TabIndex = 4;
             this.Button_Save.Text = "Save";
             this.Button_Save.UseVisualStyleBackColor = true;
+            this.Button_Save.Click += new System.EventHandler(this.Button_Save_Click);
             // 
             // TextBox_Save
             // 
@@ -168,9 +180,11 @@
             this.Button_Extract.TabIndex = 6;
             this.Button_Extract.Text = "Extract";
             this.Button_Extract.UseVisualStyleBackColor = true;
+            this.Button_Extract.Click += new System.EventHandler(this.Button_Extract_Click);
             // 
             // Cutter
             // 
+            this.AcceptButton = this.Button_Extract;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 441);
@@ -183,14 +197,16 @@
             this.Controls.Add(this.Button_Open);
             this.Font = new System.Drawing.Font("メイリオ", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "Cutter";
             this.Text = "Texture Spriter - Cutter";
             this.GroupBox_Direction.ResumeLayout(false);
             this.GroupBox_Direction.PerformLayout();
             this.GroupBox_Size.ResumeLayout(false);
             this.GroupBox_Size.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumBox_Width)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.NumBox_Height)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,8 +220,8 @@
         private System.Windows.Forms.RadioButton RadioButton_Horizontal;
         private System.Windows.Forms.RadioButton RadioButton_Vertical;
         private System.Windows.Forms.GroupBox GroupBox_Size;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown NumBox_Height;
+        private System.Windows.Forms.NumericUpDown NumBox_Width;
         private System.Windows.Forms.Label Label_Height;
         private System.Windows.Forms.Label Label_Width;
         private System.Windows.Forms.Button Button_Save;
