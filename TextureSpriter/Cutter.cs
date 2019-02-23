@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TextureSpriter
 {
-    public partial class Form1 : Form
+    public partial class Cutter : Form
     {
-        public Form1()
+        public Cutter()
         {
             InitializeComponent();
         }

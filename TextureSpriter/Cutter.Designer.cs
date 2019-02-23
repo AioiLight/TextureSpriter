@@ -1,6 +1,6 @@
 ﻿namespace TextureSpriter
 {
-    partial class Form1
+    partial class Cutter
     {
         /// <summary>
         /// 必要なデザイナー変数です。
