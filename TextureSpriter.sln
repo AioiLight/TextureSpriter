@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.168
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TextureSpriter", "TextureSpriter\TextureSpriter.csproj", "{11231684-1EC0-4435-950B-A382B9D0BCCB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11231684-1EC0-4435-950B-A382B9D0BCCB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11231684-1EC0-4435-950B-A382B9D0BCCB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11231684-1EC0-4435-950B-A382B9D0BCCB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11231684-1EC0-4435-950B-A382B9D0BCCB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A83F3E6C-9D96-411A-B4DA-F523F5C2C3E6}
+	EndGlobalSection
+EndGlobal
