@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Marger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marger.Designer.cs">
+      <DependentUpon>Marger.cs</DependentUpon>
+    </Compile>
     <Compile Include="Cutter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -54,6 +60,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Marger.resx">
+      <DependentUpon>Marger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Cutter.resx">
       <DependentUpon>Cutter.cs</DependentUpon>
     </EmbeddedResource>
