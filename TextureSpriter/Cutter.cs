@@ -58,38 +58,46 @@ namespace TextureSpriter
 
         private static void Processing(string fileName, string extractFolder, Direction direction, Size size, ProgressBar progressBar)
         {
-            // Bitmapの生成
             try
             {
+                // Bitmapの生成
                 var origin = new Bitmap(fileName);
+
+                // 指定サイズで分割
+                var number = direction == Direction.Vertical ? origin.Height / size.Height : origin.Width / size.Width;
+
+                // プログレスバーの初期化
+                progressBar.Maximum = number;
+                progressBar.Value = 0;
+
+                for (int i = 0; i < number; i++)
+                {
+                    var rectangle = new Rectangle();
+                    if(direction == Direction.Vertical)
+                    {
+                        rectangle = new Rectangle(0, size.Height * i, size.Width, size.Width);
+                    }
+                    else
+                    {
+                        rectangle = new Rectangle(size.Width * i, 0, size.Width, size.Width);
+                    }
+                    var working = origin.Clone(rectangle, origin.PixelFormat);
+                    working.Save(extractFolder + @"/" + i + @".png");
+                    working.Dispose();
+                    progressBar.Value++;
+                }
             }
-            catch
+            catch (FileNotFoundException)
             {
                 throw new FileNotFoundException();
             }
-
-            // 指定サイズで分割
-            var number = direction == Direction.Vertical ? origin.Height / size.Height : origin.Width / size.Width;
-
-            // プログレスバーの初期化
-            progressBar.Maximum = number;
-            progressBar.Value = 0;
-
-            for (int i = 0; i < number; i++)
+            catch (OutOfMemoryException)
             {
-                var rectangle = new Rectangle();
-                if(direction == Direction.Vertical)
-                {
-                    rectangle = new Rectangle(0, size.Height * i, size.Width, size.Width);
-                }
-                else
-                {
-                    rectangle = new Rectangle(size.Width * i, 0, size.Width, size.Width);
-                }
-                var working = origin.Clone(rectangle, origin.PixelFormat);
-                working.Save(extractFolder + @"/" + i + @".png");
-                working.Dispose();
-                progressBar.Value++;
+                throw new OutOfMemoryException();
+            }
+            catch (Exception)
+            {
+                throw new Exception();
             }
         }
 
@@ -112,8 +120,14 @@ namespace TextureSpriter
         private void Button_Extract_Click(object sender, EventArgs e)
         {
             var direction = RadioButton_Vertical.Checked ? Direction.Vertical : Direction.Horizontal;
-            Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value), ProgressBar);
-
+            try
+            {
+                Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value), ProgressBar);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Textrue Spriter - Cutter", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
