@@ -28,7 +28,7 @@ namespace TextureSpriter
         private static string OpenDialog(string beforePath)
         {
             var dialog = new OpenFileDialog();
-            if(!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
+            if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 return dialog.FileName;
@@ -57,40 +57,48 @@ namespace TextureSpriter
             return beforePath;
         }
 
-        private static void Processing(string fileName, string extractFolder, Direction direction, Size size, ProgressBar progressBar)
+        private static void Processing(string fileFolder, string extractPath, Direction direction, Size size, ProgressBar progressBar)
         {
             try
             {
                 // Bitmapの生成
-                var origin = new Bitmap(fileName);
+                var origin = new List<Bitmap>();
+                foreach (var item in Directory.GetFiles(fileFolder))
+                {
+                    origin.Add(new Bitmap(item));
+                }
 
-                // 指定サイズで分割
-                var number = direction == Direction.Vertical ? origin.Height / size.Height : origin.Width / size.Width;
+                // サイズの推定
+                var extractSize = direction == Direction.Vertical ? new Size(size.Width, size.Height * origin.Count) : new Size(size.Width * origin.Count, size.Height);
+
+                // 出力用Bitmapの生成
+                var result = new Bitmap(extractSize.Width, extractSize.Height);
+                var graphic = Graphics.FromImage(result);
 
                 // プログレスバーの初期化
-                progressBar.Maximum = number;
+                progressBar.Maximum = origin.Count;
                 progressBar.Value = 0;
 
-                for (int i = 0; i < number; i++)
+                for (int i = 0; i < origin.Count; i++)
                 {
-                    var rectangle = new Rectangle();
-                    if(direction == Direction.Vertical)
+                    if (direction == Direction.Vertical)
                     {
-                        rectangle = new Rectangle(0, size.Height * i, size.Width, size.Width);
+                        graphic.DrawImage(origin[i], new Point(0, size.Height * i));
                     }
                     else
                     {
-                        rectangle = new Rectangle(size.Width * i, 0, size.Width, size.Width);
+                        graphic.DrawImage(origin[i], new Point(size.Width * i, 0));
                     }
-                    var working = origin.Clone(rectangle, origin.PixelFormat);
-                    working.Save(extractFolder + @"/" + i + @".png");
-                    working.Dispose();
+                    origin[i].Dispose();
                     progressBar.Value++;
                 }
+
+                // 保存
+                result.Save(extractPath);
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException(string.Format(Properties.Cutter.FileNotFound, fileName));
+                throw new FileNotFoundException(string.Format(Properties.Cutter.FileNotFound, fileFolder));
             }
             catch (OutOfMemoryException)
             {
@@ -104,18 +112,18 @@ namespace TextureSpriter
 
         private void Button_Open_Click(object sender, EventArgs e)
         {
-            TextBox_Open.Text = OpenDialog(TextBox_Open.Text);
-            var size = new Bitmap(TextBox_Open.Text);
-            NumBox_Width.Maximum = size.Width;
-            NumBox_Width.Value = NumBox_Width.Maximum;
-            NumBox_Height.Maximum = size.Height;
-            NumBox_Height.Value = NumBox_Height.Maximum;
-            size.Dispose();
+            TextBox_Open.Text = FolderDialog(TextBox_Open.Text);
+            //var size = new Bitmap(TextBox_Open.Text);
+            //NumBox_Width.Maximum = size.Width;
+            //NumBox_Width.Value = NumBox_Width.Maximum;
+            //NumBox_Height.Maximum = size.Height;
+            //NumBox_Height.Value = NumBox_Height.Maximum;
+            //size.Dispose();
         }
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            TextBox_Save.Text = FolderDialog(TextBox_Save.Text);
+            TextBox_Save.Text = SaveDialog(TextBox_Save.Text);
         }
 
         private void Button_Extract_Click(object sender, EventArgs e)

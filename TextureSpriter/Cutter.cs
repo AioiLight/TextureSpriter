@@ -28,7 +28,7 @@ namespace TextureSpriter
         private static string OpenDialog(string beforePath)
         {
             var dialog = new OpenFileDialog();
-            if(!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
+            if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
             if (dialog.ShowDialog() == DialogResult.OK)
             {
                 return dialog.FileName;
@@ -74,7 +74,7 @@ namespace TextureSpriter
                 for (int i = 0; i < number; i++)
                 {
                     var rectangle = new Rectangle();
-                    if(direction == Direction.Vertical)
+                    if (direction == Direction.Vertical)
                     {
                         rectangle = new Rectangle(0, size.Height * i, size.Width, size.Width);
                     }

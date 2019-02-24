@@ -211,7 +211,7 @@
             this.ProgressBar.Size = new System.Drawing.Size(440, 23);
             this.ProgressBar.TabIndex = 7;
             // 
-            // Cutter
+            // Marger
             // 
             this.AcceptButton = this.Button_Extract;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -230,8 +230,8 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "Cutter";
-            this.Text = "Texture Spriter - Cutter";
+            this.Name = "Marger";
+            this.Text = "Texture Spriter - Marger";
             this.GroupBox_Direction.ResumeLayout(false);
             this.GroupBox_Direction.PerformLayout();
             this.GroupBox_Size.ResumeLayout(false);
