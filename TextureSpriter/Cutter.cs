@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -89,15 +90,15 @@ namespace TextureSpriter
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException();
+                throw new FileNotFoundException(string.Format(Properties.Cutter.FileNotFound, fileName));
             }
             catch (OutOfMemoryException)
             {
-                throw new OutOfMemoryException();
+                throw new OutOfMemoryException(string.Format(Properties.Cutter.OutOfMemory));
             }
             catch (Exception)
             {
-                throw new Exception();
+                throw new Exception(string.Format(Properties.Cutter.Exception));
             }
         }
 
@@ -123,6 +124,8 @@ namespace TextureSpriter
             try
             {
                 Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value), ProgressBar);
+                MessageBox.Show(string.Format(Properties.Cutter.Finish));
+                Process.Start(TextBox_Save.Text);
             }
             catch (Exception ex)
             {
