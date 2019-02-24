@@ -56,13 +56,25 @@ namespace TextureSpriter
             return beforePath;
         }
 
-        private static void Processing(string fileName, string extractFolder, Direction direction, Size size)
+        private static void Processing(string fileName, string extractFolder, Direction direction, Size size, ProgressBar progressBar)
         {
             // Bitmapの生成
-            var origin = new Bitmap(fileName);
+            try
+            {
+                var origin = new Bitmap(fileName);
+            }
+            catch
+            {
+                throw new FileNotFoundException();
+            }
 
             // 指定サイズで分割
             var number = direction == Direction.Vertical ? origin.Height / size.Height : origin.Width / size.Width;
+
+            // プログレスバーの初期化
+            progressBar.Maximum = number;
+            progressBar.Value = 0;
+
             for (int i = 0; i < number; i++)
             {
                 var rectangle = new Rectangle();
@@ -77,12 +89,19 @@ namespace TextureSpriter
                 var working = origin.Clone(rectangle, origin.PixelFormat);
                 working.Save(extractFolder + @"/" + i + @".png");
                 working.Dispose();
+                progressBar.Value++;
             }
         }
 
         private void Button_Open_Click(object sender, EventArgs e)
         {
             TextBox_Open.Text = OpenDialog(TextBox_Open.Text);
+            var size = new Bitmap(TextBox_Open.Text);
+            NumBox_Width.Maximum = size.Width;
+            NumBox_Width.Value = NumBox_Width.Maximum;
+            NumBox_Height.Maximum = size.Height;
+            NumBox_Height.Value = NumBox_Height.Maximum;
+            size.Dispose();
         }
 
         private void Button_Save_Click(object sender, EventArgs e)
@@ -93,7 +112,8 @@ namespace TextureSpriter
         private void Button_Extract_Click(object sender, EventArgs e)
         {
             var direction = RadioButton_Vertical.Checked ? Direction.Vertical : Direction.Horizontal;
-            Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value));
+            Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value), ProgressBar);
+
         }
     }
 }
