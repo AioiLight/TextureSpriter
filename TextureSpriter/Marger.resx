@@ -168,6 +168,54 @@
   <data name="&gt;&gt;TextBox_Open.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.Name" xml:space="preserve">
+    <value>RadioButton_Horizontal</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.Parent" xml:space="preserve">
+    <value>GroupBox_Direction</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.Name" xml:space="preserve">
+    <value>RadioButton_Vertical</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.Parent" xml:space="preserve">
+    <value>GroupBox_Direction</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="GroupBox_Direction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="GroupBox_Direction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 103</value>
+  </data>
+  <data name="GroupBox_Direction.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GroupBox_Direction.Text" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.Name" xml:space="preserve">
+    <value>GroupBox_Direction</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
   <data name="RadioButton_Horizontal.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -222,29 +270,77 @@
   <data name="&gt;&gt;RadioButton_Vertical.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="GroupBox_Direction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
+  <data name="&gt;&gt;NumBox_Height.Name" xml:space="preserve">
+    <value>NumBox_Height</value>
   </data>
-  <data name="GroupBox_Direction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 103</value>
+  <data name="&gt;&gt;NumBox_Height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="GroupBox_Direction.TabIndex" type="System.Int32, mscorlib">
+  <data name="&gt;&gt;NumBox_Height.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Height.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.Name" xml:space="preserve">
+    <value>NumBox_Width</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label_Height.Name" xml:space="preserve">
+    <value>Label_Height</value>
+  </data>
+  <data name="&gt;&gt;Label_Height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label_Height.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="&gt;&gt;Label_Height.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="GroupBox_Direction.Text" xml:space="preserve">
-    <value>Direction</value>
+  <data name="&gt;&gt;Label_Width.Name" xml:space="preserve">
+    <value>Label_Width</value>
   </data>
-  <data name="&gt;&gt;GroupBox_Direction.Name" xml:space="preserve">
-    <value>GroupBox_Direction</value>
+  <data name="&gt;&gt;Label_Width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GroupBox_Direction.Type" xml:space="preserve">
+  <data name="&gt;&gt;Label_Width.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="&gt;&gt;Label_Width.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="GroupBox_Size.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 169</value>
+  </data>
+  <data name="GroupBox_Size.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 98</value>
+  </data>
+  <data name="GroupBox_Size.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="GroupBox_Size.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Size.Name" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Size.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;GroupBox_Direction.Parent" xml:space="preserve">
+  <data name="&gt;&gt;GroupBox_Size.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;GroupBox_Direction.ZOrder" xml:space="preserve">
-    <value>5</value>
+  <data name="&gt;&gt;GroupBox_Size.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="NumBox_Height.Location" type="System.Drawing.Point, System.Drawing">
     <value>95, 54</value>
@@ -345,30 +441,6 @@
   <data name="&gt;&gt;Label_Width.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="GroupBox_Size.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 169</value>
-  </data>
-  <data name="GroupBox_Size.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 98</value>
-  </data>
-  <data name="GroupBox_Size.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="GroupBox_Size.Text" xml:space="preserve">
-    <value>Size</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.Name" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
   <data name="Button_Save.Location" type="System.Drawing.Point, System.Drawing">
     <value>13, 275</value>
   </data>
@@ -465,6 +537,9 @@
   <data name="&gt;&gt;ProgressBar.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
+  </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
