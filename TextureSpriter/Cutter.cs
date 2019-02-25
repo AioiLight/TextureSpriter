@@ -90,15 +90,15 @@ namespace TextureSpriter
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException(string.Format(Properties.Cutter.FileNotFound, fileName));
+                throw new FileNotFoundException(string.Format(Properties.Common.FileNotFound, fileName));
             }
             catch (OutOfMemoryException)
             {
-                throw new OutOfMemoryException(string.Format(Properties.Cutter.OutOfMemory));
+                throw new OutOfMemoryException(string.Format(Properties.Common.OutOfMemory));
             }
             catch (Exception)
             {
-                throw new Exception(string.Format(Properties.Cutter.Exception));
+                throw new Exception(string.Format(Properties.Common.Exception));
             }
         }
 
@@ -124,7 +124,7 @@ namespace TextureSpriter
             try
             {
                 Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value), ProgressBar);
-                MessageBox.Show(string.Format(Properties.Cutter.Finish));
+                MessageBox.Show(string.Format(Properties.Common.Finish));
                 Process.Start(TextBox_Save.Text);
             }
             catch (Exception ex)

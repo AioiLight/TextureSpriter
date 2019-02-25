@@ -22,14 +22,14 @@ namespace TextureSpriter.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Cutter {
+    internal class Common {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Cutter() {
+        internal Common() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace TextureSpriter.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TextureSpriter.Properties.Cutter", typeof(Cutter).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("TextureSpriter.Properties.Common", typeof(Common).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

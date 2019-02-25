@@ -66,19 +66,19 @@
     <EmbeddedResource Include="Cutter.resx">
       <DependentUpon>Cutter.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Properties\Cutter.resx">
+    <EmbeddedResource Include="Properties\Common.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Cutter.Designer.cs</LastGenOutput>
+      <LastGenOutput>Common.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <Compile Include="Properties\Cutter.Designer.cs">
+    <Compile Include="Properties\Common.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Cutter.resx</DependentUpon>
+      <DependentUpon>Common.resx</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
