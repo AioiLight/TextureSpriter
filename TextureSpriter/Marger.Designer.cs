@@ -184,6 +184,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Marger";
+            this.ShowInTaskbar = false;
             this.GroupBox_Direction.ResumeLayout(false);
             this.GroupBox_Direction.PerformLayout();
             this.GroupBox_Size.ResumeLayout(false);
