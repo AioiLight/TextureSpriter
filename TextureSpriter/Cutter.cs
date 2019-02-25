@@ -67,18 +67,21 @@ namespace TextureSpriter
 
         private void Button_Open_Click(object sender, EventArgs e)
         {
-            TextBox_Open.Text = OpenDialog(TextBox_Open.Text);
-            var size = new Bitmap(TextBox_Open.Text);
-            NumBox_Width.Maximum = size.Width;
-            NumBox_Width.Value = NumBox_Width.Maximum;
-            NumBox_Height.Maximum = size.Height;
-            NumBox_Height.Value = NumBox_Height.Maximum;
-            size.Dispose();
+            TextBox_Open.Text = File.OpenDialog(TextBox_Open.Text);
+            if(!string.IsNullOrWhiteSpace(TextBox_Open.Text))
+            {
+                var size = new Bitmap(TextBox_Open.Text);
+                NumBox_Width.Maximum = size.Width;
+                NumBox_Width.Value = NumBox_Width.Maximum;
+                NumBox_Height.Maximum = size.Height;
+                NumBox_Height.Value = NumBox_Height.Maximum;
+                size.Dispose();
+            }
         }
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            TextBox_Save.Text = FolderDialog(TextBox_Save.Text);
+            TextBox_Save.Text = File.FolderDialog(TextBox_Save.Text);
         }
 
         private void Button_Extract_Click(object sender, EventArgs e)

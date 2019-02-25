@@ -74,7 +74,7 @@ namespace TextureSpriter
 
         private void Button_Open_Click(object sender, EventArgs e)
         {
-            TextBox_Open.Text = FolderDialog(TextBox_Open.Text);
+            TextBox_Open.Text = File.FolderDialog(TextBox_Open.Text);
             //var size = new Bitmap(TextBox_Open.Text);
             //NumBox_Width.Maximum = size.Width;
             //NumBox_Width.Value = NumBox_Width.Maximum;
@@ -85,7 +85,7 @@ namespace TextureSpriter
 
         private void Button_Save_Click(object sender, EventArgs e)
         {
-            TextBox_Save.Text = SaveDialog(TextBox_Save.Text);
+            TextBox_Save.Text = File.SaveDialog(TextBox_Save.Text);
         }
 
         private void Button_Extract_Click(object sender, EventArgs e)

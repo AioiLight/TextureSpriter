@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,7 @@ namespace TextureSpriter
         public static string OpenDialog(string beforePath)
         {
             var dialog = new OpenFileDialog();
+            dialog.Filter = "*.png, *.bmp, *.jpg, *.gif|*.png;*.bmp;*.jpg;*.gif";
             if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
             if (dialog.ShowDialog() == DialogResult.OK)
             {
@@ -23,6 +25,7 @@ namespace TextureSpriter
         public static string SaveDialog(string beforePath)
         {
             var dialog = new SaveFileDialog();
+            dialog.Filter = "*.png, *.bmp, *.jpg, *.gif|*.png;*.bmp;*.jpg;*.gif";
             if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
             if (dialog.ShowDialog() == DialogResult.OK)
             {
