@@ -133,7 +133,7 @@ namespace TextureSpriter
             {
                 Processing(TextBox_Open.Text, TextBox_Save.Text, direction, new Size((int)NumBox_Width.Value, (int)NumBox_Height.Value), ProgressBar);
                 MessageBox.Show(string.Format(Properties.Cutter.Finish));
-                Process.Start(TextBox_Save.Text);
+                Process.Start(Path.GetDirectoryName(TextBox_Save.Text));
             }
             catch (Exception ex)
             {
