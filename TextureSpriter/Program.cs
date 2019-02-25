@@ -16,7 +16,7 @@ namespace TextureSpriter
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new  Marger());
+            Application.Run(new StartUp());
         }
     }
 }

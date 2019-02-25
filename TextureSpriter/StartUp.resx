@@ -117,48 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Button_Open.Text" xml:space="preserve">
-    <value>開く...</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RadioButton_Horizontal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 24</value>
-  </data>
-  <data name="RadioButton_Horizontal.Text" xml:space="preserve">
-    <value>横</value>
-  </data>
-  <data name="RadioButton_Vertical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 24</value>
-  </data>
-  <data name="RadioButton_Vertical.Text" xml:space="preserve">
-    <value>縦</value>
-  </data>
-  <data name="GroupBox_Direction.Text" xml:space="preserve">
-    <value>結合する方向</value>
-  </data>
-  <data name="Label_Height.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
-  </data>
-  <data name="Label_Height.Text" xml:space="preserve">
-    <value>縦 (px):</value>
-  </data>
-  <data name="Label_Width.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 20</value>
-  </data>
-  <data name="Label_Width.Text" xml:space="preserve">
-    <value>横 (px):</value>
-  </data>
-  <data name="GroupBox_Size.Text" xml:space="preserve">
-    <value>1枚あたりのサイズ</value>
-  </data>
-  <data name="Button_Save.Text" xml:space="preserve">
-    <value>保存先...</value>
-  </data>
-  <data name="Button_Extract.Text" xml:space="preserve">
-    <value>出力</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterParent</value>
-  </data>
 </root>

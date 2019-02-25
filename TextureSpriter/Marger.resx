@@ -117,451 +117,379 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Button_Open.Text" xml:space="preserve">
+    <value>Open</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="Button_Open.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 14</value>
+  <data name="Button_Extract.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 12pt</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.Name" xml:space="preserve">
+    <value>GroupBox_Direction</value>
+  </data>
+  <data name="ProgressBar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>440, 23</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar.Name" xml:space="preserve">
+    <value>ProgressBar</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Button_Extract.Size" type="System.Drawing.Size, System.Drawing">
+    <value>154, 59</value>
+  </data>
+  <data name="&gt;&gt;Button_Open.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Button_Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 38</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Size.Name" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="GroupBox_Size.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Button_Open.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="Label_Width.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 23</value>
+  </data>
+  <data name="NumBox_Height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 54</value>
+  </data>
+  <data name="&gt;&gt;Button_Save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Size.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label_Width.Name" xml:space="preserve">
+    <value>Label_Width</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.Parent" xml:space="preserve">
+    <value>GroupBox_Direction</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Size.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_Extract.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
+    <value>メイリオ, 9.75pt</value>
+  </data>
+  <data name="GroupBox_Size.Text" xml:space="preserve">
+    <value>Size</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Height.Name" xml:space="preserve">
+    <value>Label_Height</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Save.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="RadioButton_Vertical.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 24</value>
+  </data>
+  <data name="ProgressBar.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="TextBox_Save.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="Button_Extract.Text" xml:space="preserve">
+    <value>Extract</value>
+  </data>
+  <data name="NumBox_Width.Location" type="System.Drawing.Point, System.Drawing">
+    <value>95, 21</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NumBox_Width.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Button_Open.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
   </data>
-  <data name="Button_Open.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Button_Open.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Button_Open.Text" xml:space="preserve">
-    <value>Open</value>
-  </data>
-  <data name="&gt;&gt;Button_Open.Name" xml:space="preserve">
-    <value>Button_Open</value>
-  </data>
-  <data name="&gt;&gt;Button_Open.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Button_Open.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Button_Open.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="TextBox_Open.Location" type="System.Drawing.Point, System.Drawing">
-    <value>120, 20</value>
-  </data>
-  <data name="TextBox_Open.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 27</value>
-  </data>
-  <data name="TextBox_Open.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Open.Name" xml:space="preserve">
-    <value>TextBox_Open</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Open.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Open.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Open.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.Name" xml:space="preserve">
-    <value>RadioButton_Horizontal</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.Parent" xml:space="preserve">
-    <value>GroupBox_Direction</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.Name" xml:space="preserve">
-    <value>RadioButton_Vertical</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.Parent" xml:space="preserve">
-    <value>GroupBox_Direction</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="GroupBox_Direction.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 60</value>
-  </data>
-  <data name="GroupBox_Direction.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 103</value>
-  </data>
-  <data name="GroupBox_Direction.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="GroupBox_Direction.Text" xml:space="preserve">
-    <value>Direction</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Direction.Name" xml:space="preserve">
-    <value>GroupBox_Direction</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Direction.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Direction.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Direction.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="RadioButton_Horizontal.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="RadioButton_Horizontal.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 56</value>
-  </data>
-  <data name="RadioButton_Horizontal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>92, 24</value>
-  </data>
-  <data name="RadioButton_Horizontal.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="RadioButton_Horizontal.Text" xml:space="preserve">
-    <value>Horizontal</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.Name" xml:space="preserve">
-    <value>RadioButton_Horizontal</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.Parent" xml:space="preserve">
-    <value>GroupBox_Direction</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Horizontal.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RadioButton_Vertical.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="RadioButton_Vertical.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 26</value>
-  </data>
-  <data name="RadioButton_Vertical.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 24</value>
-  </data>
-  <data name="RadioButton_Vertical.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="RadioButton_Vertical.Text" xml:space="preserve">
-    <value>Vertical</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.Name" xml:space="preserve">
-    <value>RadioButton_Vertical</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.Parent" xml:space="preserve">
-    <value>GroupBox_Direction</value>
-  </data>
-  <data name="&gt;&gt;RadioButton_Vertical.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.Name" xml:space="preserve">
-    <value>NumBox_Height</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.Name" xml:space="preserve">
-    <value>NumBox_Width</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.Name" xml:space="preserve">
-    <value>Label_Height</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
   <data name="&gt;&gt;Label_Height.ZOrder" xml:space="preserve">
     <value>2</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.Name" xml:space="preserve">
-    <value>Label_Width</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="GroupBox_Size.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 169</value>
-  </data>
-  <data name="GroupBox_Size.Size" type="System.Drawing.Size, System.Drawing">
-    <value>600, 98</value>
-  </data>
-  <data name="GroupBox_Size.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="GroupBox_Size.Text" xml:space="preserve">
-    <value>Size</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.Name" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;GroupBox_Size.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="NumBox_Height.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 54</value>
-  </data>
-  <data name="NumBox_Height.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 27</value>
-  </data>
-  <data name="NumBox_Height.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="NumBox_Height.ThousandsSeparator" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.Name" xml:space="preserve">
-    <value>NumBox_Height</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Height.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="NumBox_Width.Location" type="System.Drawing.Point, System.Drawing">
-    <value>95, 21</value>
-  </data>
-  <data name="NumBox_Width.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 27</value>
-  </data>
-  <data name="NumBox_Width.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.Name" xml:space="preserve">
-    <value>NumBox_Width</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.Type" xml:space="preserve">
-    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;NumBox_Width.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Label_Height.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label_Height.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 56</value>
-  </data>
-  <data name="Label_Height.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 20</value>
-  </data>
-  <data name="Label_Height.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="Label_Height.Text" xml:space="preserve">
-    <value>Height (px):</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.Name" xml:space="preserve">
-    <value>Label_Height</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;Label_Height.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Label_Width.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="Label_Width.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 23</value>
-  </data>
-  <data name="Label_Width.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 20</value>
-  </data>
-  <data name="Label_Width.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="Label_Width.Text" xml:space="preserve">
-    <value>Width (px):</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.Name" xml:space="preserve">
-    <value>Label_Width</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.Parent" xml:space="preserve">
-    <value>GroupBox_Size</value>
-  </data>
-  <data name="&gt;&gt;Label_Width.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Button_Save.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 275</value>
-  </data>
-  <data name="Button_Save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 5, 4, 5</value>
-  </data>
-  <data name="Button_Save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 38</value>
   </data>
   <data name="Button_Save.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
-  <data name="Button_Save.Text" xml:space="preserve">
-    <value>Save</value>
+  <data name="&gt;&gt;TextBox_Save.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button_Save.Name" xml:space="preserve">
-    <value>Button_Save</value>
+  <data name="&gt;&gt;Label_Height.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="Button_Open.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 14</value>
+  </data>
+  <data name="Label_Height.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="GroupBox_Size.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 169</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 20</value>
+  </data>
+  <data name="RadioButton_Vertical.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 26</value>
+  </data>
+  <data name="Button_Open.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Open.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TextBox_Open.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 20</value>
+  </data>
+  <data name="TextBox_Save.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 27</value>
+  </data>
+  <data name="RadioButton_Vertical.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.Name" xml:space="preserve">
+    <value>NumBox_Width</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Save.Name" xml:space="preserve">
+    <value>TextBox_Save</value>
+  </data>
+  <data name="RadioButton_Horizontal.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label_Width.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="NumBox_Height.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="RadioButton_Horizontal.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 24</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Open.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NumBox_Height.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="Label_Width.Text" xml:space="preserve">
+    <value>Width (px):</value>
+  </data>
+  <data name="Button_Save.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 275</value>
+  </data>
+  <data name="RadioButton_Vertical.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="GroupBox_Direction.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 60</value>
+  </data>
+  <data name="Label_Width.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Direction.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Height.Name" xml:space="preserve">
+    <value>NumBox_Height</value>
+  </data>
+  <data name="Label_Width.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 20</value>
+  </data>
+  <data name="Button_Extract.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="&gt;&gt;Button_Save.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button_Save.Parent" xml:space="preserve">
+  <data name="GroupBox_Size.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 98</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.Name" xml:space="preserve">
+    <value>RadioButton_Horizontal</value>
+  </data>
+  <data name="&gt;&gt;GroupBox_Size.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;Button_Open.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_Extract.Name" xml:space="preserve">
+    <value>Button_Extract</value>
+  </data>
+  <data name="RadioButton_Horizontal.Text" xml:space="preserve">
+    <value>Horizontal</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.NumericUpDown, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ProgressBar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button_Open.Name" xml:space="preserve">
+    <value>Button_Open</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Open.Name" xml:space="preserve">
+    <value>TextBox_Open</value>
+  </data>
+  <data name="Label_Height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 20</value>
+  </data>
+  <data name="&gt;&gt;Label_Width.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NumBox_Width.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="GroupBox_Direction.Size" type="System.Drawing.Size, System.Drawing">
+    <value>600, 103</value>
+  </data>
+  <data name="TextBox_Open.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;Label_Height.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.Name" xml:space="preserve">
+    <value>RadioButton_Vertical</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Open.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Height.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Button_Save.Name" xml:space="preserve">
+    <value>Button_Save</value>
+  </data>
+  <data name="GroupBox_Direction.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Button_Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 38</value>
+  </data>
+  <data name="Label_Height.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="&gt;&gt;Button_Save.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;Button_Extract.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Label_Width.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="TextBox_Save.Location" type="System.Drawing.Point, System.Drawing">
     <value>120, 281</value>
   </data>
-  <data name="TextBox_Save.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 27</value>
-  </data>
-  <data name="TextBox_Save.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Save.Name" xml:space="preserve">
-    <value>TextBox_Save</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Save.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Save.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;TextBox_Save.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="Button_Extract.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 12pt</value>
-  </data>
-  <data name="Button_Extract.Location" type="System.Drawing.Point, System.Drawing">
-    <value>458, 370</value>
-  </data>
-  <data name="Button_Extract.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 59</value>
-  </data>
-  <data name="Button_Extract.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="Button_Extract.Text" xml:space="preserve">
-    <value>Extract</value>
-  </data>
-  <data name="&gt;&gt;Button_Extract.Name" xml:space="preserve">
-    <value>Button_Extract</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Marger</value>
   </data>
   <data name="&gt;&gt;Button_Extract.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;Button_Extract.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="RadioButton_Vertical.Text" xml:space="preserve">
+    <value>Vertical</value>
   </data>
-  <data name="&gt;&gt;Button_Extract.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="ProgressBar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 406</value>
-  </data>
-  <data name="ProgressBar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>440, 23</value>
-  </data>
-  <data name="ProgressBar.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar.Name" xml:space="preserve">
-    <value>ProgressBar</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ProgressBar, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;ProgressBar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>ja</value>
-  </metadata>
-  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 20</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>624, 441</value>
-  </data>
-  <data name="$this.Font" type="System.Drawing.Font, System.Drawing">
-    <value>メイリオ, 9.75pt</value>
-  </data>
-  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="Button_Save.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 5, 4, 5</value>
+  </data>
+  <data name="TextBox_Open.Size" type="System.Drawing.Size, System.Drawing">
+    <value>492, 27</value>
+  </data>
+  <data name="Label_Height.Text" xml:space="preserve">
+    <value>Height (px):</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Texture Spriter - Marger</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>Marger</value>
+  <data name="NumBox_Height.Size" type="System.Drawing.Size, System.Drawing">
+    <value>120, 27</value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="Label_Width.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Horizontal.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ProgressBar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 406</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>624, 441</value>
+  </data>
+  <data name="RadioButton_Horizontal.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 56</value>
+  </data>
+  <data name="&gt;&gt;NumBox_Height.Parent" xml:space="preserve">
+    <value>GroupBox_Size</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 5, 4, 5</value>
+  </data>
+  <data name="RadioButton_Horizontal.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBox_Save.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Label_Height.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="Button_Save.Text" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="GroupBox_Direction.Text" xml:space="preserve">
+    <value>Direction</value>
+  </data>
+  <data name="Button_Extract.Location" type="System.Drawing.Point, System.Drawing">
+    <value>458, 370</value>
+  </data>
+  <data name="&gt;&gt;RadioButton_Vertical.Parent" xml:space="preserve">
+    <value>GroupBox_Direction</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ja</value>
+  </metadata>
 </root>
