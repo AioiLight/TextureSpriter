@@ -19,44 +19,6 @@ namespace TextureSpriter
             InitializeComponent();
         }
 
-        enum Direction
-        {
-            Vertical,
-            Horizontal
-        }
-
-        private static string OpenDialog(string beforePath)
-        {
-            var dialog = new OpenFileDialog();
-            if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                return dialog.FileName;
-            }
-            return beforePath;
-        }
-
-        private static string SaveDialog(string beforePath)
-        {
-            var dialog = new SaveFileDialog();
-            if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                return dialog.FileName;
-            }
-            return beforePath;
-        }
-
-        private static string FolderDialog(string beforePath)
-        {
-            var dialog = new FolderBrowserDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                return dialog.SelectedPath;
-            }
-            return beforePath;
-        }
-
         private static void Processing(string fileFolder, string extractPath, Direction direction, Size size, ProgressBar progressBar)
         {
             try

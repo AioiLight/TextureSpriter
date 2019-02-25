@@ -19,50 +19,13 @@ namespace TextureSpriter
             InitializeComponent();
         }
 
-        enum Direction
-        {
-            Vertical,
-            Horizontal
-        }
-
-        private static string OpenDialog(string beforePath)
-        {
-            var dialog = new OpenFileDialog();
-            if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                return dialog.FileName;
-            }
-            return beforePath;
-        }
-
-        private static string SaveDialog(string beforePath)
-        {
-            var dialog = new SaveFileDialog();
-            if (!string.IsNullOrWhiteSpace(beforePath)) dialog.InitialDirectory = Path.GetDirectoryName(beforePath);
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                return dialog.FileName;
-            }
-            return beforePath;
-        }
-
-        private static string FolderDialog(string beforePath)
-        {
-            var dialog = new FolderBrowserDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                return dialog.SelectedPath;
-            }
-            return beforePath;
-        }
-
         private static void Processing(string fileName, string extractFolder, Direction direction, Size size, ProgressBar progressBar)
         {
             try
             {
                 // Bitmapの生成
                 var origin = new Bitmap(fileName);
+                var fileExtension = Path.GetExtension(fileName);
 
                 // 指定サイズで分割
                 var number = direction == Direction.Vertical ? origin.Height / size.Height : origin.Width / size.Width;
@@ -83,7 +46,7 @@ namespace TextureSpriter
                         rectangle = new Rectangle(size.Width * i, 0, size.Width, size.Width);
                     }
                     var working = origin.Clone(rectangle, origin.PixelFormat);
-                    working.Save(extractFolder + @"/" + i + @".png");
+                    working.Save(extractFolder + @"/" + i + fileExtension);
                     working.Dispose();
                     progressBar.Value++;
                 }
