@@ -25,7 +25,9 @@ namespace TextureSpriter
             {
                 // Bitmapの生成
                 var origin = new List<Bitmap>();
-                foreach (var item in Directory.GetFiles(fileFolder))
+                var files = Directory.GetFiles(fileFolder);
+                Array.Sort(files, new Tomochan154.Text.NaturalComparer());
+                foreach (var item in files)
                 {
                     origin.Add(new Bitmap(item));
                 }
