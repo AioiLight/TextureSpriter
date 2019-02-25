@@ -60,6 +60,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cutter.ja.resx">
+      <DependentUpon>Cutter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marger.ja.resx">
+      <DependentUpon>Marger.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Marger.resx">
       <DependentUpon>Marger.cs</DependentUpon>
     </EmbeddedResource>
