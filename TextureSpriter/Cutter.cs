@@ -39,11 +39,11 @@ namespace TextureSpriter
                     var rectangle = new Rectangle();
                     if (direction == Direction.Vertical)
                     {
-                        rectangle = new Rectangle(0, size.Height * i, size.Width, size.Width);
+                        rectangle = new Rectangle(0, size.Height * i, size.Width, size.Height);
                     }
                     else
                     {
-                        rectangle = new Rectangle(size.Width * i, 0, size.Width, size.Width);
+                        rectangle = new Rectangle(size.Width * i, 0, size.Width, size.Height);
                     }
                     var working = origin.Clone(rectangle, origin.PixelFormat);
                     working.Save(extractFolder + @"/" + i + fileExtension);
