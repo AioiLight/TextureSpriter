@@ -171,6 +171,7 @@
             // 
             this.AcceptButton = this.Button_Extract;
             resources.ApplyResources(this, "$this");
+            this.AllowDrop = true;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ProgressBar);
             this.Controls.Add(this.Button_Extract);
@@ -185,6 +186,8 @@
             this.MinimizeBox = false;
             this.Name = "Marger";
             this.ShowInTaskbar = false;
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Marger_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Marger_DragEnter);
             this.GroupBox_Direction.ResumeLayout(false);
             this.GroupBox_Direction.PerformLayout();
             this.GroupBox_Size.ResumeLayout(false);

@@ -126,6 +126,9 @@
   <data name="Finish" xml:space="preserve">
     <value>正常に処理が終了しました。</value>
   </data>
+  <data name="InvaildFile" xml:space="preserve">
+    <value>このファイルは有効ではありません。</value>
+  </data>
   <data name="OutOfMemory" xml:space="preserve">
     <value>メモリ不足です。処理を中断しました。</value>
   </data>

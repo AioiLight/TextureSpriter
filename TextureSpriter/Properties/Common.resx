@@ -126,6 +126,9 @@
   <data name="Finish" xml:space="preserve">
     <value>Finished successfully.</value>
   </data>
+  <data name="InvaildFile" xml:space="preserve">
+    <value>This file is not valid.</value>
+  </data>
   <data name="OutOfMemory" xml:space="preserve">
     <value>Out of memory. Process has stopped.</value>
   </data>

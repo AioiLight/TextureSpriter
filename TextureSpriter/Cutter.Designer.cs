@@ -63,9 +63,9 @@
             // 
             // GroupBox_Direction
             // 
-            resources.ApplyResources(this.GroupBox_Direction, "GroupBox_Direction");
             this.GroupBox_Direction.Controls.Add(this.RadioButton_Horizontal);
             this.GroupBox_Direction.Controls.Add(this.RadioButton_Vertical);
+            resources.ApplyResources(this.GroupBox_Direction, "GroupBox_Direction");
             this.GroupBox_Direction.Name = "GroupBox_Direction";
             this.GroupBox_Direction.TabStop = false;
             // 
@@ -85,11 +85,11 @@
             // 
             // GroupBox_Size
             // 
-            resources.ApplyResources(this.GroupBox_Size, "GroupBox_Size");
             this.GroupBox_Size.Controls.Add(this.NumBox_Height);
             this.GroupBox_Size.Controls.Add(this.NumBox_Width);
             this.GroupBox_Size.Controls.Add(this.Label_Height);
             this.GroupBox_Size.Controls.Add(this.Label_Width);
+            resources.ApplyResources(this.GroupBox_Size, "GroupBox_Size");
             this.GroupBox_Size.Name = "GroupBox_Size";
             this.GroupBox_Size.TabStop = false;
             // 
@@ -170,6 +170,7 @@
             // Cutter
             // 
             this.AcceptButton = this.Button_Extract;
+            this.AllowDrop = true;
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ProgressBar);
@@ -185,6 +186,8 @@
             this.MinimizeBox = false;
             this.Name = "Cutter";
             this.ShowInTaskbar = false;
+            this.DragDrop += new System.Windows.Forms.DragEventHandler(this.Cutter_DragDrop);
+            this.DragEnter += new System.Windows.Forms.DragEventHandler(this.Cutter_DragEnter);
             this.GroupBox_Direction.ResumeLayout(false);
             this.GroupBox_Direction.PerformLayout();
             this.GroupBox_Size.ResumeLayout(false);

@@ -88,6 +88,15 @@ namespace TextureSpriter.Properties {
         }
         
         /// <summary>
+        ///   This file is not valid. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string InvaildFile {
+            get {
+                return ResourceManager.GetString("InvaildFile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Out of memory. Process has stopped. に類似しているローカライズされた文字列を検索します。
         /// </summary>
         internal static string OutOfMemory {

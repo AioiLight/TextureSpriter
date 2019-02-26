@@ -104,5 +104,16 @@ namespace TextureSpriter
                 MessageBox.Show(ex.Message, "Textrue Spriter - Cutter", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void Marger_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            if (!string.IsNullOrWhiteSpace(files[0])) TextBox_Open.Text = files[0];
+        }
+
+        private void Marger_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = e.Data.GetDataPresent(DataFormats.FileDrop) ? DragDropEffects.All : DragDropEffects.None;
+        }
     }
 }

@@ -68,14 +68,27 @@ namespace TextureSpriter
         private void Button_Open_Click(object sender, EventArgs e)
         {
             TextBox_Open.Text = File.OpenDialog(TextBox_Open.Text);
-            if(!string.IsNullOrWhiteSpace(TextBox_Open.Text))
+            SuggestSize();
+        }
+
+        private void SuggestSize()
+        {
+            if (!string.IsNullOrWhiteSpace(TextBox_Open.Text)
+                && !System.IO.File.GetAttributes(TextBox_Open.Text).HasFlag(FileAttributes.Directory))
             {
-                var size = new Bitmap(TextBox_Open.Text);
-                NumBox_Width.Maximum = size.Width;
-                NumBox_Width.Value = NumBox_Width.Maximum;
-                NumBox_Height.Maximum = size.Height;
-                NumBox_Height.Value = NumBox_Height.Maximum;
-                size.Dispose();
+                try
+                {
+                    var size = new Bitmap(TextBox_Open.Text);
+                    NumBox_Width.Maximum = size.Width;
+                    NumBox_Width.Value = NumBox_Width.Maximum;
+                    NumBox_Height.Maximum = size.Height;
+                    NumBox_Height.Value = NumBox_Height.Maximum;
+                    size.Dispose();
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show(Properties.Common.InvaildFile, "Textrue Spriter - Cutter", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
 
@@ -97,6 +110,18 @@ namespace TextureSpriter
             {
                 MessageBox.Show(ex.Message, "Textrue Spriter - Cutter", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        private void Cutter_DragDrop(object sender, DragEventArgs e)
+        {
+            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop, false);
+            if(!string.IsNullOrWhiteSpace(files[0])) TextBox_Open.Text = files[0];
+            SuggestSize();
+        }
+
+        private void Cutter_DragEnter(object sender, DragEventArgs e)
+        {
+            e.Effect = e.Data.GetDataPresent(DataFormats.FileDrop) ? DragDropEffects.All : DragDropEffects.None;
         }
     }
 }
